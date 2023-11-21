@@ -1,13 +1,25 @@
 package diffsquares
 
 func SquareOfSum(n int) int {
-	panic("Please implement the SquareOfSum function")
+	sum := 0
+
+	for x := 1; x <= n; x++ {
+		sum += x
+	}
+
+	return sum * sum
 }
 
 func SumOfSquares(n int) int {
-	panic("Please implement the SumOfSquares function")
+	sum := 0
+
+	for x := 1; x <= n; x++ {
+		sum += x * x
+	}
+
+	return sum
 }
 
 func Difference(n int) int {
-	panic("Please implement the Difference function")
+	return SquareOfSum(n) - SumOfSquares(n)
 }
